@@ -1,0 +1,34 @@
+extends _layout.pug
+block content
+  .container
+    header
+      h1 Free Code Camp
+      h2.subheading Timestamp Microservice
+    p Timestamp Microservice is a full stack JavaScript app built for #[a(href='https://www.freecodecamp.com/challenges/timestamp-microservice', target='_blank') Free Code Camp].
+    blockquote
+      p User stories:
+      ul
+        li I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016).
+        li If it does, it returns both the Unix timestamp and the natural language form of that date.
+        li If it does not contain a date or Unix timestamp, it returns null for those properties.
+    .usage
+      .example
+        h3 Example usage
+        each item in examples
+          pre
+            code= url + item
+      .example
+        h3 Example output
+        pre
+          code= output
+    .live
+      h3 You can even try it live below
+      .example
+        input#date(placeholder='Start typing...')
+      .example
+        textarea#output(placeholder='Result will be displayed here...', rows=4)
+    p The example above uses #[a(href='https://developer.mozilla.org/en/docs/Web/API/Fetch_API') fetch()] to get the results via AJAX. It works only in Edge 14+, FireFox 39+, Chrome 40+, Safari 10.1+; IE is supported. If you use Intenet Explorer, chances are it won't work for you...
+    p The GitHub repo is available here: #[a(href='https://github.com/zsoltime/fcc-timestamp', target='_blank') Timestamp Microservice]
+  footer.credit
+    p Created by #[a(href='https://zsolti.co') Zsolt Meszaros]
+  script(src='app.js')

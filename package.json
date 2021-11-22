@@ -1,0 +1,41 @@
+{
+  "name": "timestamp-microservice",
+  "version": "0.1.0",
+  "description": "Timestamp Microservice for Free Code Camp",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "tape ./tests/*.js | tap-spec"
+  },
+  "author": "Zsolt Meszaros",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.1",
+    "express": "^4.15.2",
+    "pug": "^2.0.0-rc.2"
+  },
+  "engines": {
+    "node": "6.11.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.3.0",
+    "eslint-config-airbnb-base": "^11.3.1",
+    "eslint-plugin-import": "^2.7.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zsoltime/timestamp.git"
+  },
+  "keywords": [
+    "timestamp"
+  ],
+  "bugs": {
+    "url": "https://github.com/zsoltime/timestamp/issues"
+  },
+  "homepage": "https://github.com/zsoltime/timestamp#readme",
+  "directories": {
+    "test": "test"
+  }
+}

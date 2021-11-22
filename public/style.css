@@ -1,0 +1,126 @@
+* {
+  box-sizing: inherit;
+}
+html {
+  font-size: 16px;
+}
+body {
+  background-color: ghostwhite;
+  box-sizing: border-box;
+  color: #444;
+  font-family: Lato, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  margin: 0;
+}
+h1, h2, h3 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+}
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+h2 {
+  color: #888;
+  font-size: 1.35rem;
+}
+blockquote {
+  border-left: 4px solid crimson;
+  color: #888;
+  margin: 0 0 2rem;
+  padding: 0 0 0.5rem 0.5rem;
+}
+p {
+  margin: 0 0 1rem;
+}
+a {
+  color: crimson;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+ul {
+  margin: 0;
+  padding-left: 2rem;
+  list-style-type: circle;
+}
+code {
+  background-color: crimson;
+  color: #fff;
+  display: block;
+  font-family: "Source Code Pro", monospace;
+  font-size: .75rem;
+  overflow-x: auto;
+  padding: .5rem;
+  white-space: pre;
+}
+code::-webkit-scrollbar {
+  height: 0.5rem;
+}
+code::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+}
+code::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5);
+}
+.container {
+  background-color: #fff;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 90vw;
+  padding: 1.5rem;
+  width: 800px;
+}
+.example {
+  margin-bottom: 2rem;
+}
+.credit {
+  box-shadow: none;
+  margin: -3.25rem auto;
+  padding: 0;
+  text-align: center;
+}
+.credit p {
+  font-size: 0.625rem;
+  margin: 0;
+}
+.live .example {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+.live h3 {
+  width: 100%;
+}
+input, textarea {
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  width: 100%
+}
+@media (min-width: 640px) {
+  .usage, .live {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .example {
+    width: 49%;
+  }
+  blockquote {
+    padding-left: 1.5rem;
+  }
+  ul {
+    padding-left: 2.5rem;
+  }
+}
